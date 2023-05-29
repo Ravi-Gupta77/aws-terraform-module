@@ -91,7 +91,7 @@ resource "aws_db_subnet_group" "db_subnet_group" {
 resource "aws_db_instance" "rds" {
    allocated_storage       = var.dbstorage
    storage_type            = "gp2"
-   identifier              = "employee_management"
+   identifier              = "employee-management"
    engine                  = var.engine
    engine_version          = var.engine-version
    instance_class          = var.instance_class
